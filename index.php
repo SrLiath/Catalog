@@ -1,15 +1,129 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-  <meta charset="utf-8"/>
+ 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <style>
+    
+
+
+
+.item {
+      display: inline-block;
+      width: 19%;
+      margin: 1%;
+      text-align: center;
+      top: 50%;
+            left: 13vw;
+      float:inline-end;
+      position:relative;
+      
+    }
+
+  
+
+.icon-menu{
+
+font-size: 20px;
+float: left;
+color: #21dee2;
+
+}
+
+.icon{
+margin-right: 8px;
+}
+
+
+
+.vertical-menu button {
+  background-color: #eee; /* Grey background color */
+  color: black; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+  width: 10vw;
+}
+
+.vertical-menu button:hover {
+  background-color: #ff5e14; 
+  color: white;}
+
+
+.vertical-menu {
+    position: absolute;
+    left: 0;
+    background-color: none;
+    padding: 10px;
+    
+  }
+  .input-group {
+  margin: auto;
+  width: 25%;
+  padding: 10px;
+  justify-content: center;
+}
+.pagination {
+  margin: auto;
+  width: 25%;
+  padding: 10px;
+  justify-content: center;
+  float:inline-end;
+}
+.btn{
+  left: 1vw;
+  width: 10vw;
+}
+  .btn:hover {
+    background-color: #ff5e14;
+    border-color: #ff5e14;
+  }
+
+  .items{
+    padding: 10px;
+  justify-content: center;
+  position: static;
+  right: 0px;
+  }
+
+.js{
+height:25vh; 
+width: 25vw;
+object-fit: contain;
+}
+
+.modal-content {
+  width: 52vw;
+}
+
+.modal-body {
+  display: flex;
+}
+
+#modal-img {
+  width: 38vw;
+  height: auto;
+  object-fit: contain;
+}
+
+#modal-button {
+  text-align: left;
+  margin-top: 20px;
+}
+
+#modal-description {
+  margin-top: 20px;
+  padding-left: 15px;
+}
+.close{float:right;
+  text-align: right;
+  }
+
+/*Suporte mobile*/
 @media only screen and (max-width: 1050px) {       button {
         background-color: #4CAF50;
         color: white;
@@ -32,89 +146,25 @@
         text-align: center;
       }
 
-      h2{
+      h5{
         max-width: 25ch;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   font-size:21px;
       }
-}
-
-
-
-
-
-
-
-.item {
-      display: inline-block;
-      width: 19%;
-      margin: 1%;
-      text-align: center;
-    }
-
-
-.icon-menu{
-
-font-size: 20px;
-float: left;
-color: #21dee2;
-
-}
-
-.icon{
-margin-right: 8px;
-}
-
-
-
-.vertical-menu {
-  width: 200px; /* Set a width if you like */
-}
-
-.vertical-menu button {
-  background-color: #eee; /* Grey background color */
-  color: black; /* Black text color */
-  display: block; /* Make the links appear below each other */
-  padding: 12px; /* Add some padding */
-  text-decoration: none; /* Remove underline from links */
-  width: 100px;
-}
-
-.vertical-menu button:hover {
-  background-color: #ff5e14; 
-  color: white;}
-
-
-.vertical-menu {
-    position: absolute;
-    right: 0;
-    background-color: none;
-    padding: 10px;
-    
-  }
-  .input-group {
-  margin: auto;
-  width: 25%;
-  padding: 10px;
-  justify-content: center;
-}
-.pagination {
-  margin: auto;
-  width: 25%;
-  padding: 10px;
-  justify-content: center;
-}
-  .btn:hover {
-    background-color: #ff5e14;
-    border-color: #ff5e14;
-  }
-
-  .items{
+      .items{
     padding: 10px;
   justify-content: center;
+  position: relative;
+  left: -5vw
   }
+}
+
+
+
+
+
 
   </style>
 </head>
@@ -133,23 +183,23 @@ margin-right: 8px;
     </form>
     <form action="" method="post">
     <input type="hidden" name="menu_option" value="1">
-    <button type="submit" value="1">1</button>
+    <button type="submit" value="1">Categoria 1</button>
     </form>
     <form action="" method="post">
     <input type="hidden" name="menu_option" value="2">
-    <button type="submit" value="2">2</button>
+    <button type="submit" value="2">Categoria 2</button>
     </form>
     <form action="" method="post">
     <input type="hidden" name="menu_option" value="3">
-    <button type="submit" value="3">3</button>
+    <button type="submit" value="3">Categoria 3</button>
     </form>
     <form action="" method="post">
     <input type="hidden" name="menu_option" value="4">   
-    <button type="submit" value="4">4</button>
+    <button type="submit" value="4">Categoria 4</button>
     </form>
     <form action="" method="post">
     <input type="hidden" name="menu_option" value="5">
-    <button type="submit" value="5">5</button>
+    <button type="submit" value="5">Categoria 5</button>
     </form>
     
     </form>
@@ -160,7 +210,7 @@ margin-right: 8px;
 
 <!--barra pesquisa-->
 <div id="search" class="input-group">
-  <form action="" method="post">
+  <form action="?page=1" method="post">
     <input type="text" id="search" name="search" maxlength="20">
     <input type="submit"  value="Filtrar">
   </form>
@@ -224,34 +274,34 @@ $total_pages = ceil($total_items / $items_per_page);
   </form>
   <form action="?page=1" method="post">
     <input type="hidden" name="menu_option" value="1">
-    <button type="submit">1</button>
+    <button type="submit">Categoria 1</button>
   </form>
 
   <form action="?page=1" method="post">
     <input type="hidden" name="menu_option" value="2">
-    <button type="submit">2</button>
+    <button type="submit">Categoria 2</button>
   </form>
 
   <form action="?page=1" method="post">
     <input type="hidden" name="menu_option" value="3">
-    <button type="submit">3</button>
+    <button type="submit">Categoria 3</button>
   </form>
 
   <form action="?page=1" method="post">
     <input type="hidden" name="menu_option" value="4">
-    <button type="submit">4</button>
+    <button type="submit">Categoria 4</button>
   </form>
 
   <form action="?page=1" method="post">
     <input type="hidden" name="menu_option" value="5">
-    <button type="submit">5</button>
+    <button type="submit">Categoria 5</button>
   </form>
 </div>
-  <?php
+<?php
     while ($item = mysqli_fetch_assoc($items_query)) {
       echo '<div class="item">';
-      echo '<img class="js" src="' . $item['image'] . '" alt="' . $item['name'] . '"  style="heigth:50px; width: 150px;" data-toggle="modal" data-target="#itemModal" data-name="' . $item['name'] . '" data-description="' . $item['description'] . '" data-image="' . $item['image'] . '">';
-      echo '<h2>' . $item['name'] . '</h2>';
+      echo '<img class="js" src="' . $item['image'] . '" alt="' . $item['name'] . '"   data-toggle="modal" data-target="#itemModal" data-name="' . $item['name'] . '" data-description="' . $item['description'] . '" data-image="' . $item['image'] . '">';
+      echo '<h5>' . $item['name'] . '</h5>';
       echo '<p style="display:none">' . $item['id'] . '</p>';
       echo '</div>';
     }
@@ -259,8 +309,35 @@ $total_pages = ceil($total_items / $items_per_page);
 </div>
 
 
+<!-- PopUp -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body d-flex">
+        <img id="modal-img" src="" alt="">
+        <div >
+          <div class="modal-button" id="modal-button"></div>
+        </div>
+      </div>    
+
+      <p id="modal-description" style="margin-top: 20px; padding-left:15px;"></p>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</div>
+
 <!-- Indice -->
-  <div id="pagination" class="pagination">
+<div id="pagination" class="pagination">
     <?php
       for ($i = 1; $i <= $total_pages; $i++) {
         if ($i == $current_page) {
@@ -271,34 +348,6 @@ $total_pages = ceil($total_items / $items_per_page);
       }
     ?>
   </div>
-
-
-  <!-- PopUp -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content" style="width: 715px;">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel"></h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body d-flex">
-        <img id="modal-img" src="" alt="" style="width: 500px; height: auto; object-fit: contain;">
-        <div style="width: 100%; margin-left: 20px;">
-          <div id="modal-button" style="text-align: left; margin-top: 20px;"></div>
-        </div>
-      </div>    
-
-      <p id="modal-description" style="margin-top: 20px; padding-left:15px;"></p>
-
-</div>
-
-    </div>
-  </div>
-</div>
-
-
 
 
             
